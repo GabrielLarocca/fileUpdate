@@ -16,12 +16,12 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
 			<input
 				type="file"
 				onChange={handleFileChange}
-				data-testid="upload-button"
 				style={{ display: 'none' }}
 				id="upload-file"
 			/>
+
 			<label htmlFor="upload-file">
-				<button type="button">Upload</button>
+				Upload
 			</label>
 		</div>
 	);
