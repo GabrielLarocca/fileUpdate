@@ -79,6 +79,15 @@ The backend will run on `http://localhost:3000` and the frontend will run on `ht
 
 ## Running Tests
 
+### Frontend Tests
+
+To run the backend tests, navigate to the backend directory and run:
+
+```bash
+cd frontend
+npm test
+```
+
 ### Backend Tests
 
 To run the backend tests, navigate to the backend directory and run:
@@ -86,3 +95,4 @@ To run the backend tests, navigate to the backend directory and run:
 ```bash
 cd backend
 npm test
+```
