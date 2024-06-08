@@ -41,7 +41,7 @@ Allows users to upload CSV files, which are then stored in a SQLite database, an
     npm install
 
     # For frontend
-    cd ../frontend
+    cd frontend
     npm install
     ```
 
@@ -55,7 +55,7 @@ Allows users to upload CSV files, which are then stored in a SQLite database, an
 3. Start the frontend server:
 
     ```bash
-    cd ../frontend
+    cd frontend
     npm start
     ```
 
