@@ -71,11 +71,11 @@ The backend will run on `http://localhost:3000` and the frontend will run on `ht
 
 ### Desktop View
 
-![Desktop View](./images/prints/desktop_view.png)
+![Desktop View](./images/prints/desktopUse.png)
 
 ### Mobile View
 
-![Mobile View](./images/prints/mobile_view.png)
+![Mobile View](./images/prints/mobileUse.png)
 
 ## Running Tests
 
