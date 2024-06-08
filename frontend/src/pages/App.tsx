@@ -4,6 +4,7 @@ import FileUpload from '../components/FileUpload';
 import SearchBar from '../components/SearchBar';
 import Card from '../components/Card';
 import { CSVData } from '../types/CSVData';
+import { API_URL } from '../constants';
 
 const App: React.FC = () => {
 	const [csvData, setCsvData] = useState<CSVData[]>([]);
@@ -24,7 +25,7 @@ const App: React.FC = () => {
 		formData.append('file', file);
 
 		try {
-			const response = await axios.post('/api/files', formData, {
+			const response = await axios.post(`${API_URL}/api/files`, formData, {
 				headers: { 'Content-Type': 'multipart/form-data' }
 			});
 
@@ -42,7 +43,7 @@ const App: React.FC = () => {
 
 	const fetchCsvData = async (query: string = '') => {
 		try {
-			const response = await axios.get(`/api/users?q=${query}`);
+			const response = await axios.get(`${API_URL}/api/users?q=${query}`);
 
 			if (response.data && Array.isArray(response.data.data)) {
 				setCsvData(response.data.data);
